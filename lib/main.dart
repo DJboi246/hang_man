@@ -334,7 +334,7 @@ class _HangmanState extends State<Hangman> {
                       Expanded(
                           child: Center(
                               child: Text(
-                        "$lives lives",
+                        "$lives chances",
                         style: const TextStyle(fontSize: 20),
                       ))),
                       //  Divider(),
