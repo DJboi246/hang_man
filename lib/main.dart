@@ -87,16 +87,16 @@ class _HangmanState extends State<Hangman> {
   bool start = true;
   final dropdownlist = ["Original", "Easy", "Medium", "Hard"];
   String dropdownvalue = "Original";
-
+ 
   void sound() {
     setState(() {
       mute = !mute;
       if (mute) {
         FlameAudio.bgm.stop();
       } else {
-        FlameAudio.bgm.play("Bycicle.mp3");
+        FlameAudio.bgm.play('Bycicle.mp3');
       }
-      refresh();
+      // refresh();
     });
   }
 
@@ -283,7 +283,7 @@ class _HangmanState extends State<Hangman> {
   void initState() {
     super.initState();
     FlameAudio.bgm.initialize();
-    FlameAudio.bgm.play("Bycicle.mp3");
+    FlameAudio.bgm.play('Bycicle.mp3');
     reload();
   }
 
