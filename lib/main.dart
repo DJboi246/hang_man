@@ -68,13 +68,13 @@ class _HangmanState extends State<Hangman> {
     'z'
   ];
   var pics = [
-    "assets/hang6.gif",
-    "assets/hang5.gif",
-    "assets/hang4.gif",
-    "assets/hang3.gif",
-    "assets/hang2.gif",
+    "assets/hang0.gif",
     "assets/hang1.gif",
-    "assets/hang0.gif"
+    "assets/hang2.gif",
+    "assets/hang3.gif",
+    "assets/hang4.gif",
+    "assets/hang5.gif",
+    "assets/hang6.png"
   ];
   String secretword = "";
   String guessword = "";
@@ -115,7 +115,7 @@ class _HangmanState extends State<Hangman> {
         mainAxisAlignment: MainAxisAlignment.center,
         children: <Widget>[
           const Divider(),
-          Image.asset("assets/hang6.gif"),
+          Image.asset("assets/hang6.png"),
           const Divider(),
           DropdownButton<String>(
             items: dropdownlist
