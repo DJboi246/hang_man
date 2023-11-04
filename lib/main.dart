@@ -185,7 +185,7 @@ class _HangmanState extends State<Hangman> {
     guessedletters = [];
     notdisablebtn = true;
     while (true) {
-      secretword = nouns[Random().nextInt(nouns.length)];
+      secretword = nouns[Random().nextInt(nouns.length)].toLowerCase();
       if (dropdownvalue == "Original") {
         lives = 6;
         refresh();
